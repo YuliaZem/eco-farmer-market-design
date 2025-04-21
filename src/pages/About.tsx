@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Separator } from "@/components/ui/separator";
@@ -6,11 +5,6 @@ import { Separator } from "@/components/ui/separator";
 const About = () => {
   return (
     <>
-      <Helmet>
-        <title>О нас - ЭкоФерма</title>
-        <meta name="description" content="Узнайте больше о нашем проекте эко-фермерской продукции, нашей миссии и ценностях" />
-      </Helmet>
-      
       <Header />
       
       <main className="container py-8 md:py-12">
