@@ -89,17 +89,21 @@ const Header = () => {
             <Search className="h-5 w-5 md:hidden" />
             <span className="sr-only">Поиск</span>
           </Button>
-          <Button variant="ghost" size="icon">
-            <User className="h-5 w-5" />
-            <span className="sr-only">Аккаунт</span>
-          </Button>
-          <Button variant="ghost" size="icon" className="relative">
-            <ShoppingCart className="h-5 w-5" />
-            <span className="sr-only">Корзина</span>
-            <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-medium text-primary-foreground">
-              0
-            </span>
-          </Button>
+          <Link to="/profile">
+            <Button variant="ghost" size="icon">
+              <User className="h-5 w-5" />
+              <span className="sr-only">Аккаунт</span>
+            </Button>
+          </Link>
+          <Link to="/cart">
+            <Button variant="ghost" size="icon" className="relative">
+              <ShoppingCart className="h-5 w-5" />
+              <span className="sr-only">Корзина</span>
+              <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-medium text-primary-foreground">
+                3
+              </span>
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
